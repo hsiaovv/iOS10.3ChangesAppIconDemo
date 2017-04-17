@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChangesApp_sIconDemo0331" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdw-1u-3QF">
+                                <rect key="frame" x="147" y="170" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ecV-kZ-Kcr"/>
+                                    <constraint firstAttribute="height" constant="80" id="h3s-dD-Tvi"/>
+                                </constraints>
+                                <state key="normal" image="ChangeIcon1"/>
+                                <connections>
+                                    <action selector="changeIcon1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qim-Kn-Rg9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf3-eZ-ghK">
+                                <rect key="frame" x="147" y="300" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="KWn-66-5Ou"/>
+                                    <constraint firstAttribute="width" constant="80" id="f9n-IL-TjV"/>
+                                </constraints>
+                                <state key="normal" image="ChangeIcon2"/>
+                                <connections>
+                                    <action selector="changeIcon2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HqO-HV-Wed"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVz-iK-jKM">
+                                <rect key="frame" x="147" y="430" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="nPm-vA-bcv"/>
+                                    <constraint firstAttribute="height" constant="80" id="vgm-ox-o9A"/>
+                                </constraints>
+                                <state key="normal" title="恢复"/>
+                                <connections>
+                                    <action selector="restoreIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSu-av-DZm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QVz-iK-jKM" firstAttribute="top" secondItem="Rf3-eZ-ghK" secondAttribute="bottom" constant="50" id="AJU-ct-irZ"/>
+                            <constraint firstItem="fdw-1u-3QF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NC7-wB-Ooo"/>
+                            <constraint firstItem="fdw-1u-3QF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="Tet-Bm-RfY"/>
+                            <constraint firstItem="Rf3-eZ-ghK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aG9-AO-t1C"/>
+                            <constraint firstItem="QVz-iK-jKM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXq-vJ-CL8"/>
+                            <constraint firstItem="Rf3-eZ-ghK" firstAttribute="top" secondItem="fdw-1u-3QF" secondAttribute="bottom" constant="50" id="yFc-X8-nNw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ChangeIcon1" width="60" height="60"/>
+        <image name="ChangeIcon2" width="60" height="60"/>
+    </resources>
+</document>
